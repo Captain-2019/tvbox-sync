@@ -2,11 +2,20 @@
 __pycache__/
 *.pyc
 
-# 临时探测文件
-probe*.py
-check_login.js
-check_cookie.js
+# 临时探测/自动化脚本
+probe*.js
+*_probe.js
+check_*.js
+auto_deploy.js
+setup_pages*.js
+trigger_run.js
+wait_verify.js
+switch_source.js
+api_upload.js
+api_push.js
+whoami.js
 .pcli.sh
 .playwright-cli/
+*.png
 
 # 注意：out/ 目录需要提交，它就是电视要订阅的内容
