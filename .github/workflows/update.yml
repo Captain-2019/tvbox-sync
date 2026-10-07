@@ -2,16 +2,14 @@
 # TVBox 源自动同步 —— GitHub Actions 云端部署
 #
 # 作用：GitHub 云端每 6 小时自动跑一次采集，
-#       结果自动提交回仓库，并生成 Pages 站点。
+#       结果自动提交回仓库，并通过 Actions 发布 Pages。
 #       电视端填 Pages 地址即可，手机无需开机。
 #
 # 部署步骤：
-#   1. 新建一个 GitHub 仓库（名字随意，例如 tvbox-sync）
-#   2. 把本目录文件全部上传（sources.json / tvbox_sync.py / gen_status_page.py）
-#   3. 新建 .github/workflows/update.yml（本目录已提供）
-#   4. 仓库 Settings → Pages → Source 选 GitHub Actions
-#   5. Actions 标签页手动 Run workflow 触发首次运行
-#   6. 几分钟后访问 https://<你的用户名>.github.io/tvbox-sync/tvbox.json
+#   1. 新建一个 Public GitHub 仓库，把本目录文件按结构上传
+#   2. 仓库 Settings → Pages → Source 选 GitHub Actions
+#   3. Actions 标签页手动 Run workflow 触发首次运行
+#   4. 访问 https://<用户名>.github.io/<仓库>/tvbox.json 验证
 #
 # 注意：仓库必须设为 Public（Public 免费，Private 需付费）
 # ============================================================
@@ -20,12 +18,20 @@ name: Update TVBox config
 on:
   schedule:
     # GitHub Actions 的 cron 用 UTC 时间
-    # 北京时间 07:00 / 13:00 / 19:00 / 01:00  =>  UTC 23:00 / 05:00 / 11:00 / 17:00
+    # 每 6 小时一次（错开整点，避免和大量定时任务撞车）
     - cron: '17,23 5,11,17,23 * * *'
   workflow_dispatch:   # 支持手动触发
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**/*.md'
+      - '.gitignore'
+      - '.gitattributes'
 
 permissions:
-  contents: write       # 允许自动提交
+  contents: write       # 允许自动提交采集结果
+  pages: write          # 允许发布 Pages
+  id-token: write       # Pages 部署令牌
 
 concurrency:
   group: tvbox-update
@@ -59,7 +65,8 @@ jobs:
             git push
           fi
 
-      - name: 发布 Pages
+      # 采集产物作为 artifact 传给部署 job
+      - name: 上传 Pages 产物
         uses: actions/upload-pages-artifact@v3
         with:
           path: out
@@ -67,9 +74,6 @@ jobs:
   deploy:
     needs: update
     runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
