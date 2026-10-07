@@ -2,8 +2,11 @@
 __pycache__/
 *.pyc
 
-# 临时文件
-*.log
+# 临时探测文件
 probe*.py
+check_login.js
+check_cookie.js
+.pcli.sh
+.playwright-cli/
 
 # 注意：out/ 目录需要提交，它就是电视要订阅的内容
