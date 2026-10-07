@@ -48,6 +48,9 @@ jobs:
           python-version: '3.11'
 
       - name: 采集 / 验活 / 合并
+        env:
+          TVBOX_GITHUB_OWNER: Captain-2019
+          TVBOX_GITHUB_REPO: tvbox-sync
         run: python3 tvbox_sync.py update
 
       - name: 生成状态面板

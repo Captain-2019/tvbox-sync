@@ -44,6 +44,11 @@ PROBE_TIMEOUT = 8            # 抽样验活超时
 PROBE_PER_SOURCE = 3         # 每个源抽样验活的站点数
 
 UA = "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 Chrome/120 Mobile Safari/537.36"
+
+# GitHub Pages 部署时的用户名/仓库，用于把直播源的相对路径转成可访问的绝对地址
+# 本地跑可以留空；云端 Actions 里会自动注入
+GITHUB_OWNER = os.environ.get("TVBOX_GITHUB_OWNER", "")
+GITHUB_REPO = os.environ.get("TVBOX_GITHUB_REPO", "tvbox-sync")
 # ========================================================
 
 
@@ -66,7 +71,12 @@ def normalize_url(url):
             host.encode("ascii")
         except UnicodeEncodeError:
             host = host.encode("idna").decode("ascii")
-            url = urllib.parse.urlunsplit((p.scheme, host, p.path, p.query, p.fragment))
+        # 路径/查询里也可能含中文（如 /tv/没了），必须百分号编码，
+        # 否则 urllib 抛 UnicodeEncodeError: 'ascii' codec can't encode characters
+        path_q = urllib.parse.quote(p.path, safe="/%:@&=+$,~")
+        query_q = urllib.parse.quote(p.query, safe="=&%:@/+$,~")
+        url = urllib.parse.urlunsplit(
+            (p.scheme, host, path_q, query_q, p.fragment))
     except Exception:
         return url
     return url
@@ -228,6 +238,74 @@ def score_result(r):
     return r
 
 
+# ---------------- 直播源验活 ----------------
+def verify_live_group(lv, base_url="", timeout=12):
+    """验证一组直播源是否真的能用。
+    TVBox 的 lives 有两种形态：
+      A) type=0 + url      -> 靠 url 远程拉取 txt/m3u，TVBox 自己会去请求
+      B) group+channels   -> 内嵌频道，必须能解析出内容
+    这里对 A 直接请求 url；对 B 看有没有频道。"""
+    if not isinstance(lv, dict):
+        return False, "not-dict"
+
+    ch = lv.get("channels")
+    if isinstance(ch, list) and len(ch) > 0:
+        return True, "inline-%dch" % len(ch)
+
+    u = lv.get("url")
+    if not u:
+        # api 型（csp_ 插件）无 url 可测，交给 TVBox 自己解析
+        if lv.get("api"):
+            return True, "csp"
+        return False, "no-url-no-channels"
+
+    # 相对路径 ./lives/x.txt -> 转成绝对地址
+    if u.startswith("./"):
+        if not base_url:
+            return False, "relative-no-base"
+        u = base_url.rstrip("/") + "/" + u.lstrip("./")
+    u = normalize_url(u)
+
+    ok, data, err, ms = http_get(u, timeout=timeout)
+    if not ok:
+        return False, err[:50]
+    if not data or len(data) < 20:
+        return False, "too-small"
+    txt = data.decode("utf-8", "replace") if isinstance(data, bytes) else data
+    # 至少要有若干行，像一份频道列表
+    if txt.count("\n") < 1 and "#EXTM3U" not in txt:
+        return False, "no-channel-lines"
+    return True, "%dms/%dB" % (ms, len(data))
+
+
+def filter_lives(lives, base_url=""):
+    """过滤掉不可用的直播组，并统计结果"""
+    ok_list, bad_list = [], []
+    work = []
+    for lv in lives:
+        # csp 型无法网络验证，直接放行
+        if isinstance(lv, dict) and lv.get("api"):
+            ok_list.append(lv)
+            work.append((lv, None))
+        else:
+            work.append((lv, lv))
+    # 并发验活
+    def job(item):
+        lv, target = item
+        if target is None:
+            return lv, True, "csp"
+        good, why = verify_live_group(lv, base_url)
+        return lv, good, why
+    with ThreadPoolExecutor(max_workers=6) as ex:
+        for lv, good, why in ex.map(job, work):
+            if good:
+                ok_list.append(lv)
+            else:
+                nm = lv.get("name") or lv.get("group") or "?"
+                bad_list.append((nm, why))
+    return ok_list, bad_list
+
+
 # ---------------- 合并 ----------------
 def merge_configs(results):
     sites, lives, parses, flags = [], [], [], []
@@ -281,6 +359,17 @@ def merge_configs(results):
         "parses": parses,
         "flags": flags,
     }
+
+    # 直播源验活过滤：坏掉的直播组会让电视上出现一堆点不开的频道
+    if lives:
+        base = ("https://%s.github.io/%s/" % (GITHUB_OWNER, GITHUB_REPO)
+                if GITHUB_OWNER else "")
+        good_lives, bad_lives = filter_lives(lives, base_url=base)
+        merged["lives"] = good_lives
+        log("直播源: 可用 %d/%d" % (len(good_lives), len(lives)))
+        for nm, why in bad_lives:
+            log("  剔除失效直播源: %s (%s)" % (nm, why))
+
     return merged, used_names, skipped
 
 
