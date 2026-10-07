@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>TVBox 源状态</title>
+<style>
+  :root{--bg:#f5f6f8;--card:#fff;--line:#e6e8eb;--txt:#1f2328;--sub:#6b7280;
+        --ok:#16a34a;--bad:#dc2626;--warn:#d97706;--accent:#2563eb}
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  body{margin:0;background:var(--bg);color:var(--txt);
+       font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+       padding:16px 14px 40px}
+  h1{font-size:19px;margin:0 0 4px}
+  .sub{color:var(--sub);font-size:13px;margin-bottom:16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .k{font-size:12px;color:var(--sub)}
+  .v{font-size:22px;font-weight:650;margin-top:2px}
+  .addr{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;
+        background:#f0f4fb;border:1px solid #d6e0f5;border-radius:8px;padding:10px;
+        word-break:break-all;color:var(--accent)}
+  button{width:100%;margin-top:10px;padding:11px;border:0;border-radius:9px;background:var(--accent);
+         color:#fff;font-size:15px;font-weight:600;cursor:pointer}
+  button:active{opacity:.75}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line)}
+  th{color:var(--sub);font-weight:500;font-size:12px}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:middle}
+  .on{background:var(--ok)} .off{background:var(--bad)}
+  .pill{display:inline-block;padding:1px 7px;border-radius:99px;font-size:11px;
+        background:#eef2f7;color:var(--sub)}
+  .err{color:var(--bad);font-size:11px;max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<h1>TVBox 源状态</h1>
+<div class="sub">最近更新：2026-10-07 08:49:10</div>
+
+<div class="card">
+  <div class="grid">
+    <div><div class="k">可用源</div><div class="v">5/5</div></div>
+    <div><div class="k">聚合站点</div><div class="v">268</div></div>
+    <div><div class="k">直播源</div><div class="v">8</div></div>
+    <div><div class="k">下一次更新</div><div class="v" style="font-size:15px">14:49</div></div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="k" style="margin-bottom:6px">电视端「配置地址」填这个</div>
+  <div class="addr" id="u">http://192.168.28.117:8848/tvbox.json</div>
+  <button onclick="cp()">复制地址</button>
+  <div style="margin-top:8px"><a href="/tvbox.json" target="_blank">查看 tvbox.json →</a></div>
+</div>
+
+<div class="card">
+  <table>
+    <thead><tr><th>源</th><th>状态</th><th>速度</th><th>站点</th><th>健康</th></tr></thead>
+    <tbody>
+<tr><td><b>高天流云(33站)</b></td><td><span class="dot on"></span>活</td><td>570ms</td><td>33</td><td>3/3 <span class="pill">87.2</span></td></tr>
+<tr><td><b>影视仓·单仓聚合(167站)</b></td><td><span class="dot on"></span>活</td><td>3288ms</td><td>167</td><td>3/3 <span class="pill">80.0</span></td></tr>
+<tr><td><b>影视仓·欧歌线路</b></td><td><span class="dot on"></span>活</td><td>602ms</td><td>12</td><td>3/3 <span class="pill">80.0</span></td></tr>
+<tr><td><b>饭太硬备用(spider)</b></td><td><span class="dot on"></span>活</td><td>1219ms</td><td>3</td><td>3/3 <span class="pill">72.9</span></td></tr>
+<tr><td><b>影视仓·4K专线(53站)</b></td><td><span class="dot on"></span>活</td><td>774ms</td><td>53</td><td>2/3 <span class="pill">72.5</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="card">
+  <div class="k">采用顺序（分数高=快且全，排最前）</div>
+  <div style="margin-top:6px">高天流云(33站)、影视仓·单仓聚合(167站)、影视仓·欧歌线路、饭太硬备用(spider)、影视仓·4K专线(53站)</div>
+</div>
+
+<script>
+function cp(){
+  var t=document.getElementById('u').textContent.trim();
+  navigator.clipboard.writeText(t).then(function(){
+    var b=document.querySelector('button');var o=b.textContent;
+    b.textContent='已复制 ✓';setTimeout(function(){b.textContent=o},1600);
+  });
+}
+</script>
+</body>
+</html>

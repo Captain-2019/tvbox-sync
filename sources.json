@@ -1,0 +1,54 @@
+{
+  "_说明": [
+    "上游源列表 —— 以下地址均已实测可返回有效 JSON 配置（2026-10 验证）。",
+    "urls 按优先级排列：第一个成功的会被采用，失败自动降级到下一个。",
+    "中文字段说明：",
+    "  id    输出/状态表里的标识，建议英文",
+    "  name  展示名，可中文",
+    "  urls  候选地址列表（主地址在前，镜像在后）",
+    "新增源：复制一个对象改 urls 即可；删掉不用的对象同理。"
+  ],
+  "sources": [
+    {
+      "id": "ysc_single",
+      "name": "影视仓·单仓聚合(167站)",
+      "urls": [
+        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
+        "https://gh-proxy.net/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json"
+      ]
+    },
+    {
+      "id": "ysc_4k",
+      "name": "影视仓·4K专线(53站)",
+      "urls": [
+        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json"
+      ]
+    },
+    {
+      "id": "ysc_ouge",
+      "name": "影视仓·欧歌线路",
+      "urls": [
+        "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/ouge.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/ouge.json"
+      ]
+    },
+    {
+      "id": "gaotian",
+      "name": "高天流云(33站)",
+      "urls": [
+        "https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/0827.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json"
+      ]
+    },
+    {
+      "id": "fty_backup",
+      "name": "饭太硬备用(spider)",
+      "urls": [
+        "https://cdn.jsdelivr.net/gh/FongMi/CatVodSpider@main/json/config.json",
+        "https://gh-proxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json"
+      ]
+    }
+  ]
+}

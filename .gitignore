@@ -1,0 +1,9 @@
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 临时文件
+*.log
+probe*.py
+
+# 注意：out/ 目录需要提交，它就是电视要订阅的内容

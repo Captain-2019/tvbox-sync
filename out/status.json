@@ -1,0 +1,115 @@
+{
+ "updated_at": "2026-10-07 08:49:10",
+ "totals": {
+  "sources": 5,
+  "alive_sources": 5,
+  "sites": 268,
+  "lives": 8
+ },
+ "used_sources": [
+  "高天流云(33站)",
+  "影视仓·单仓聚合(167站)",
+  "影视仓·欧歌线路",
+  "饭太硬备用(spider)",
+  "影视仓·4K专线(53站)"
+ ],
+ "sources": [
+  {
+   "id": "gaotian",
+   "name": "高天流云(33站)",
+   "urls": [
+    "https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/0827.json",
+    "https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json"
+   ],
+   "ok": true,
+   "ms": 570,
+   "sites": 33,
+   "lives": 0,
+   "parses": 0,
+   "alive": 3,
+   "probed": 3,
+   "score": 87.2,
+   "used_url": "https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/0827.json",
+   "err": "",
+   "ts": 1791334136
+  },
+  {
+   "id": "ysc_single",
+   "name": "影视仓·单仓聚合(167站)",
+   "urls": [
+    "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
+    "https://gh-proxy.com/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
+    "https://gh-proxy.net/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json"
+   ],
+   "ok": true,
+   "ms": 3288,
+   "sites": 167,
+   "lives": 7,
+   "parses": 33,
+   "alive": 3,
+   "probed": 3,
+   "score": 80.0,
+   "used_url": "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
+   "err": "",
+   "ts": 1791334136
+  },
+  {
+   "id": "ysc_ouge",
+   "name": "影视仓·欧歌线路",
+   "urls": [
+    "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/ouge.json",
+    "https://gh-proxy.com/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/ouge.json"
+   ],
+   "ok": true,
+   "ms": 602,
+   "sites": 12,
+   "lives": 2,
+   "parses": 11,
+   "alive": 3,
+   "probed": 3,
+   "score": 79.99,
+   "used_url": "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/ouge.json",
+   "err": "",
+   "ts": 1791334136
+  },
+  {
+   "id": "fty_backup",
+   "name": "饭太硬备用(spider)",
+   "urls": [
+    "https://cdn.jsdelivr.net/gh/FongMi/CatVodSpider@main/json/config.json",
+    "https://gh-proxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json"
+   ],
+   "ok": true,
+   "ms": 1219,
+   "sites": 3,
+   "lives": 1,
+   "parses": 0,
+   "alive": 3,
+   "probed": 3,
+   "score": 72.87,
+   "used_url": "https://cdn.jsdelivr.net/gh/FongMi/CatVodSpider@main/json/config.json",
+   "err": "",
+   "ts": 1791334136
+  },
+  {
+   "id": "ysc_4k",
+   "name": "影视仓·4K专线(53站)",
+   "urls": [
+    "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
+    "https://gh-proxy.com/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json"
+   ],
+   "ok": true,
+   "ms": 774,
+   "sites": 53,
+   "lives": 2,
+   "parses": 17,
+   "alive": 2,
+   "probed": 3,
+   "score": 72.51,
+   "used_url": "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
+   "err": "",
+   "ts": 1791334136
+  }
+ ],
+ "local_url": "http://192.168.28.117:8848/tvbox.json"
+}
