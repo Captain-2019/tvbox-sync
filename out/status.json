@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-07 22:03:31",
+ "updated_at": "2026-10-08 02:44:08",
  "totals": {
   "sources": 5,
   "alive_sources": 5,
@@ -23,16 +23,16 @@
     "https://gh-proxy.net/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json"
    ],
    "ok": true,
-   "ms": 218,
+   "ms": 650,
    "sites": 167,
    "lives": 7,
    "parses": 33,
    "alive": 3,
    "probed": 3,
-   "score": 98.55,
+   "score": 95.67,
    "used_url": "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
    "err": "",
-   "ts": 1791410599
+   "ts": 1791427436
   },
   {
    "id": "gaotian",
@@ -42,16 +42,16 @@
     "https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json"
    ],
    "ok": true,
-   "ms": 331,
+   "ms": 660,
    "sites": 33,
    "lives": 0,
    "parses": 0,
    "alive": 3,
    "probed": 3,
-   "score": 88.79,
+   "score": 86.6,
    "used_url": "https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/0827.json",
    "err": "",
-   "ts": 1791410599
+   "ts": 1791427436
   },
   {
    "id": "ysc_ouge",
@@ -61,16 +61,16 @@
     "https://gh-proxy.com/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/ouge.json"
    ],
    "ok": true,
-   "ms": 239,
+   "ms": 321,
    "sites": 12,
    "lives": 2,
    "parses": 11,
    "alive": 3,
    "probed": 3,
-   "score": 82.41,
+   "score": 81.86,
    "used_url": "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/ouge.json",
    "err": "",
-   "ts": 1791410599
+   "ts": 1791427436
   },
   {
    "id": "fty_backup",
@@ -80,16 +80,16 @@
     "https://gh-proxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json"
    ],
    "ok": true,
-   "ms": 675,
+   "ms": 710,
    "sites": 3,
    "lives": 1,
    "parses": 0,
    "alive": 3,
    "probed": 3,
-   "score": 76.5,
+   "score": 76.27,
    "used_url": "https://cdn.jsdelivr.net/gh/FongMi/CatVodSpider@main/json/config.json",
    "err": "",
-   "ts": 1791410599
+   "ts": 1791427436
   },
   {
    "id": "ysc_4k",
@@ -99,17 +99,17 @@
     "https://gh-proxy.com/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json"
    ],
    "ok": true,
-   "ms": 211,
+   "ms": 789,
    "sites": 53,
    "lives": 2,
    "parses": 17,
    "alive": 2,
    "probed": 3,
-   "score": 76.26,
+   "score": 72.41,
    "used_url": "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
    "err": "",
-   "ts": 1791410599
+   "ts": 1791427436
   }
  ],
- "local_url": "http://10.1.0.78:8848/tvbox.json"
+ "local_url": "http://10.1.0.220:8848/tvbox.json"
 }
