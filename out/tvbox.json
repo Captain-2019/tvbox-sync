@@ -2256,6 +2256,32 @@
    "searchable": 0
   },
   {
+   "key": "local",
+   "name": "Local",
+   "type": 3,
+   "api": "csp_Local",
+   "searchable": 0,
+   "changeable": 0
+  },
+  {
+   "key": "market",
+   "name": "Market",
+   "type": 3,
+   "api": "csp_Market",
+   "searchable": 0,
+   "changeable": 0,
+   "ext": "./market.json"
+  },
+  {
+   "key": "push_agent@fty_backup",
+   "name": "Push",
+   "type": 3,
+   "api": "csp_Push",
+   "searchable": 0,
+   "changeable": 0,
+   "timeout": 60
+  },
+  {
    "key": "drpy_js_豆瓣@ysc_4k",
    "name": "🔥聚玩盒子4K",
    "type": 3,
@@ -2859,32 +2885,6 @@
    "filterable": 0,
    "jar": "http://tv.nxog.top/m/jar.php?id=ou;md5;d437c6e042174f181efd9649a1a33f48",
    "ext": "http://127.0.0.1:9978/file/tvbox/tok.txt"
-  },
-  {
-   "key": "local",
-   "name": "Local",
-   "type": 3,
-   "api": "csp_Local",
-   "searchable": 0,
-   "changeable": 0
-  },
-  {
-   "key": "market",
-   "name": "Market",
-   "type": 3,
-   "api": "csp_Market",
-   "searchable": 0,
-   "changeable": 0,
-   "ext": "./market.json"
-  },
-  {
-   "key": "push_agent@fty_backup",
-   "name": "Push",
-   "type": 3,
-   "api": "csp_Push",
-   "searchable": 0,
-   "changeable": 0,
-   "timeout": 60
   }
  ],
  "lives": [
