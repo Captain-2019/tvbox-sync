@@ -1791,6 +1791,144 @@
    "ext": "http://127.0.0.1:9978/file/tvbox/tok.txt"
   },
   {
+   "key": "豆瓣2@ysc_ouge",
+   "name": "📢龙马精神、金戈铁马、骏马迎春、马行千里！",
+   "type": 3,
+   "api": "csp_Douban",
+   "searchable": 0
+  },
+  {
+   "key": "豆瓣1@ysc_ouge",
+   "name": "📢公告停更",
+   "type": 3,
+   "api": "csp_Notice",
+   "searchable": 1,
+   "jar": "https://ncstatic-file.clewm.net/rsrc/2026/0307/11/f3b31497ca266ea4f8a89c88e9385f48.jpg;md5;ff4f99fad585f4935fcaa06e3092e44a",
+   "ext": "https://xn--dkw0c.v.nxog.top/m/公告?b=欧歌"
+  },
+  {
+   "key": "config@ysc_ouge",
+   "name": "🐲歌配置｜中心",
+   "type": 3,
+   "jar": "https://ncstatic-file.clewm.net/rsrc/2026/0810/15/d4ef68f275be721a92f218de955a8328.jpg;md5;c96b69de5ace48bcf0e522147364e048",
+   "api": "csp_Config",
+   "searchable": 0
+  },
+  {
+   "key": "配置中心@ysc_ouge",
+   "name": "❤配置｜中心",
+   "type": 3,
+   "api": "csp_Config",
+   "searchable": 0,
+   "changeable": 0,
+   "style": {
+    "type": "rect",
+    "ratio": 1.597
+   }
+  },
+  {
+   "key": "csp_wogg1@ysc_ouge",
+   "name": "🐲接口失效",
+   "type": 3,
+   "changeable": "0",
+   "api": "csp_Duopan",
+   "filterable": 1,
+   "jar": "https://ncstatic-file.clewm.net/rsrc/2026/0810/15/d4ef68f275be721a92f218de955a8328.jpg;md5;c96b69de5ace48bcf0e522147364e048",
+   "ext": {
+    "site_urls": [
+     "https://woog.nxog.eu.org"
+    ],
+    "url_key": "csp_wogg1",
+    "threadinfo": {
+     "chunksize": 244,
+     "threads": 16
+    }
+   }
+  },
+  {
+   "key": "csp_woog2@ysc_ouge",
+   "name": "🐲关注公众号",
+   "type": 3,
+   "changeable": "0",
+   "api": "csp_Duopan",
+   "filterable": 1,
+   "jar": "https://ncstatic-file.clewm.net/rsrc/2026/0810/15/d4ef68f275be721a92f218de955a8328.jpg;md5;c96b69de5ace48bcf0e522147364e048",
+   "ext": {
+    "site_urls": [
+     "https://ogkk.nxog.eu.org"
+    ],
+    "url_key": "woog2",
+    "threadinfo": {
+     "chunksize": 216,
+     "threads": 16
+    }
+   }
+  },
+  {
+   "key": "夸快3@ysc_ouge",
+   "name": "❤装歌APP",
+   "type": 3,
+   "api": "csp_PanWebShare",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "changeable": 1,
+   "ext": {
+    "site": [
+     "https://ogkk.nxog.eu.org"
+    ]
+   }
+  },
+  {
+   "key": "夸快2@ysc_ouge",
+   "name": "❤重新领取",
+   "type": 3,
+   "api": "csp_PanWebShare",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "changeable": 1,
+   "ext": {
+    "site": [
+     "https://woog.nxog.eu.org"
+    ]
+   }
+  },
+  {
+   "key": "push_agent@ysc_ouge",
+   "name": "📢手机｜推送",
+   "type": 3,
+   "api": "csp_Push",
+   "searchable": 0,
+   "filterable": 0,
+   "changeable": 0
+  },
+  {
+   "key": "应用商店@ysc_ouge",
+   "name": "🛒本地包更新",
+   "type": 3,
+   "api": "csp_Market",
+   "searchable": 0,
+   "changeable": 0,
+   "ext": "https://xn--dkw0c.v.nxog.top/zm/sd?b=欧歌"
+  },
+  {
+   "key": "py_douban@ysc_ouge",
+   "name": "📢接口软件永远免费",
+   "type": 3,
+   "api": "https://cdn.jsdmirror.com/gh/ouhaibo1980/tvbox@main/py/py_douban.py",
+   "searchable": 0,
+   "filterable": 0,
+   "changeable": 0
+  },
+  {
+   "key": "豆瓣4@ysc_ouge",
+   "name": "📢长期维护切勿贩卖",
+   "type": 3,
+   "api": "csp_Douban",
+   "searchable": 0
+  },
+  {
    "key": "商店",
    "name": "商店",
    "type": 3,
@@ -2116,144 +2254,6 @@
    "searchable": 0,
    "changeable": 0,
    "timeout": 60
-  },
-  {
-   "key": "豆瓣2@ysc_ouge",
-   "name": "📢龙马精神、金戈铁马、骏马迎春、马行千里！",
-   "type": 3,
-   "api": "csp_Douban",
-   "searchable": 0
-  },
-  {
-   "key": "豆瓣1@ysc_ouge",
-   "name": "📢公告停更",
-   "type": 3,
-   "api": "csp_Notice",
-   "searchable": 1,
-   "jar": "https://ncstatic-file.clewm.net/rsrc/2026/0307/11/f3b31497ca266ea4f8a89c88e9385f48.jpg;md5;ff4f99fad585f4935fcaa06e3092e44a",
-   "ext": "https://xn--dkw0c.v.nxog.top/m/公告?b=欧歌"
-  },
-  {
-   "key": "config@ysc_ouge",
-   "name": "🐲歌配置｜中心",
-   "type": 3,
-   "jar": "https://ncstatic-file.clewm.net/rsrc/2026/0810/15/d4ef68f275be721a92f218de955a8328.jpg;md5;c96b69de5ace48bcf0e522147364e048",
-   "api": "csp_Config",
-   "searchable": 0
-  },
-  {
-   "key": "配置中心@ysc_ouge",
-   "name": "❤配置｜中心",
-   "type": 3,
-   "api": "csp_Config",
-   "searchable": 0,
-   "changeable": 0,
-   "style": {
-    "type": "rect",
-    "ratio": 1.597
-   }
-  },
-  {
-   "key": "csp_wogg1@ysc_ouge",
-   "name": "🐲接口失效",
-   "type": 3,
-   "changeable": "0",
-   "api": "csp_Duopan",
-   "filterable": 1,
-   "jar": "https://ncstatic-file.clewm.net/rsrc/2026/0810/15/d4ef68f275be721a92f218de955a8328.jpg;md5;c96b69de5ace48bcf0e522147364e048",
-   "ext": {
-    "site_urls": [
-     "https://woog.nxog.eu.org"
-    ],
-    "url_key": "csp_wogg1",
-    "threadinfo": {
-     "chunksize": 244,
-     "threads": 16
-    }
-   }
-  },
-  {
-   "key": "csp_woog2@ysc_ouge",
-   "name": "🐲关注公众号",
-   "type": 3,
-   "changeable": "0",
-   "api": "csp_Duopan",
-   "filterable": 1,
-   "jar": "https://ncstatic-file.clewm.net/rsrc/2026/0810/15/d4ef68f275be721a92f218de955a8328.jpg;md5;c96b69de5ace48bcf0e522147364e048",
-   "ext": {
-    "site_urls": [
-     "https://ogkk.nxog.eu.org"
-    ],
-    "url_key": "woog2",
-    "threadinfo": {
-     "chunksize": 216,
-     "threads": 16
-    }
-   }
-  },
-  {
-   "key": "夸快3@ysc_ouge",
-   "name": "❤装歌APP",
-   "type": 3,
-   "api": "csp_PanWebShare",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "changeable": 1,
-   "ext": {
-    "site": [
-     "https://ogkk.nxog.eu.org"
-    ]
-   }
-  },
-  {
-   "key": "夸快2@ysc_ouge",
-   "name": "❤重新领取",
-   "type": 3,
-   "api": "csp_PanWebShare",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "changeable": 1,
-   "ext": {
-    "site": [
-     "https://woog.nxog.eu.org"
-    ]
-   }
-  },
-  {
-   "key": "push_agent@ysc_ouge",
-   "name": "📢手机｜推送",
-   "type": 3,
-   "api": "csp_Push",
-   "searchable": 0,
-   "filterable": 0,
-   "changeable": 0
-  },
-  {
-   "key": "应用商店@ysc_ouge",
-   "name": "🛒本地包更新",
-   "type": 3,
-   "api": "csp_Market",
-   "searchable": 0,
-   "changeable": 0,
-   "ext": "https://xn--dkw0c.v.nxog.top/zm/sd?b=欧歌"
-  },
-  {
-   "key": "py_douban@ysc_ouge",
-   "name": "📢接口软件永远免费",
-   "type": 3,
-   "api": "https://cdn.jsdmirror.com/gh/ouhaibo1980/tvbox@main/py/py_douban.py",
-   "searchable": 0,
-   "filterable": 0,
-   "changeable": 0
-  },
-  {
-   "key": "豆瓣4@ysc_ouge",
-   "name": "📢长期维护切勿贩卖",
-   "type": 3,
-   "api": "csp_Douban",
-   "searchable": 0
   },
   {
    "key": "local",
