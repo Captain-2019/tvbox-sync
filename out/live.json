@@ -14,18 +14,11 @@
   ]
  },
  {
-  "name": "MQiTV",
-  "api": "csp_MQiTV",
-  "ext": [
-   {
-    "name": "Hotel A",
-    "url": "https://127.0.0.1:4433"
-   },
-   {
-    "name": "Hotel B",
-    "url": "http://127.0.0.1"
-   }
-  ]
+  "name": "综合直播",
+  "type": 0,
+  "playerType": 2,
+  "url": "https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
+  "ua": "bingcha/1.1 (mianfeifenxiang) "
  },
  {
   "group": "redirect",
@@ -36,6 +29,20 @@
     "urls": [
      "proxy://do=live&type=txt&ext=http://home.jundie.top:81/ray/tvlive.txt"
     ]
+   }
+  ]
+ },
+ {
+  "name": "MQiTV",
+  "api": "csp_MQiTV",
+  "ext": [
+   {
+    "name": "Hotel A",
+    "url": "https://127.0.0.1:4433"
+   },
+   {
+    "name": "Hotel B",
+    "url": "http://127.0.0.1"
    }
   ]
  }
