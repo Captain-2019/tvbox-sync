@@ -14,25 +14,6 @@
   ]
  },
  {
-  "name": "综合直播",
-  "type": 0,
-  "playerType": 2,
-  "url": "https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
-  "ua": "bingcha/1.1 (mianfeifenxiang) "
- },
- {
-  "group": "redirect",
-  "channels": [
-   {
-    "name": "live",
-    "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
-    "urls": [
-     "proxy://do=live&type=txt&ext=http://home.jundie.top:81/ray/tvlive.txt"
-    ]
-   }
-  ]
- },
- {
   "name": "MQiTV",
   "api": "csp_MQiTV",
   "ext": [
@@ -43,6 +24,18 @@
    {
     "name": "Hotel B",
     "url": "http://127.0.0.1"
+   }
+  ]
+ },
+ {
+  "group": "redirect",
+  "channels": [
+   {
+    "name": "live",
+    "epg": "https://epg.112114.xyz/?ch={name}&date={date}",
+    "urls": [
+     "proxy://do=live&type=txt&ext=http://home.jundie.top:81/ray/tvlive.txt"
+    ]
    }
   ]
  }
