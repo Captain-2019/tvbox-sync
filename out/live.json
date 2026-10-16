@@ -1,5 +1,16 @@
 [
  {
+  "name": "一起看",
+  "type": 3,
+  "api": "csp_AweSomeGuard",
+  "url": "yqk",
+  "playerType": 2,
+  "ext": {
+   "sp": "Huya"
+  },
+  "timeout": 10
+ },
+ {
   "name": "MQiTV",
   "api": "csp_MQiTV",
   "ext": [
@@ -36,6 +47,52 @@
   "ua": "bingcha/1.1 (mianfeifenxiang) "
  },
  {
+  "name": "咪咕",
+  "type": 0,
+  "url": "https://develop202.github.io/migu_video/interface.txt",
+  "playerType": 2,
+  "timeout": 10
+ },
+ {
+  "name": "手动不知何时更新",
+  "type": 0,
+  "url": "https://szyyds.cn/tv/live/x.txt",
+  "playerType": 2,
+  "timeout": 10
+ },
+ {
+  "name": "有效期27年7月",
+  "type": 0,
+  "url": "http://m.szyyds.cn/api.php?token=8664f352657e8b13585bcf0f84fc3512",
+  "playerType": 2,
+  "timeout": 10
+ },
+ {
+  "name": "自动更新",
+  "type": 0,
+  "url": "https://z.szyyds.cn/iptv",
+  "playerType": 2,
+  "timeout": 10
+ },
+ {
+  "name": "音乐所",
+  "type": 0,
+  "url": "https://szyyds.cn/tv/live/yy.txt",
+  "playerType": 2,
+  "timeout": 10
+ },
+ {
+  "name": "一起看",
+  "type": 3,
+  "api": "csp_AweSomeGuard",
+  "url": "yqk",
+  "playerType": 2,
+  "ext": {
+   "sp": "Huya"
+  },
+  "timeout": 10
+ },
+ {
   "group": "redirect",
   "channels": [
    {
@@ -46,6 +103,15 @@
     ]
    }
   ]
+ },
+ {
+  "name": "live",
+  "type": 0,
+  "url": "http://xhztv.top/xhz/live.txt",
+  "playerType": 1,
+  "ua": "okhttp/3.15",
+  "epg": "http://diyp.112114.xyz/?ch={name}&date={date}",
+  "logo": "https://epg.112114.xyz/logo/{name}.png"
  },
  {
   "name": "MQiTV",
