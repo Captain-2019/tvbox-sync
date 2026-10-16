@@ -3,7 +3,7 @@
  "sites": [
   {
    "key": "豆瓣",
-   "name": "🐼┃公众号：熊猫是只肥猫┃",
+   "name": "🐼┃QQ频道：肥猫宝贝┃",
    "type": 3,
    "api": "csp_Douban",
    "searchable": 0
@@ -42,51 +42,6 @@
    }
   },
   {
-   "key": "csp_Duopan",
-   "name": "🖍︎┃蜡笔┃影视",
-   "type": 3,
-   "api": "csp_Duopan",
-   "filterable": 1,
-   "ext": {
-    "site_urls": [
-     "http://xiaocge.fun",
-     "http://feimo.fun",
-     "http://www.labi88.sbs",
-     "http://fmao.site",
-     "http://fmao.shop",
-     "http://xiaocgege.shop",
-     "http://www.xiaocgege.shop"
-    ],
-    "threadinfo": {
-     "chunksize": 512,
-     "threads": 16
-    },
-    "url_key": "Duopan2"
-   }
-  },
-  {
-   "key": "csp_Netfixtv",
-   "name": "💌┃️至臻┃影视",
-   "type": 3,
-   "api": "csp_Duopan",
-   "filterable": 1,
-   "ext": {
-    "site_urls": [
-     "https://pan.mihdr.top",
-     "https://www.zhizhen1.top",
-     "https://www.mihdr.top",
-     "https://www.miqk.cc",
-     "https://www.zhizhenpan.com",
-     "https://www.zhizhen8.click"
-    ],
-    "url_key": "Netfixtv2",
-    "threadinfo": {
-     "chunksize": 512,
-     "threads": 16
-    }
-   }
-  },
-  {
    "key": "潮流",
    "name": "🏜┃潮流┃APP",
    "type": 3,
@@ -97,15 +52,25 @@
    "key": "肥猫",
    "name": "🐼┃肥猫┃APP",
    "type": 3,
-   "api": "csp_AppGet",
-   "ext": "https://appcms.4ksj.app|O3K6rYx75Q4xtiIE"
+   "api": "csp_AppQi",
+   "ext": "https://lanyingjisu.oss-cn-wuhan-lr.aliyuncs.com/lyjszx.txt|oW5UxZ5kWVr1DI69"
   },
   {
    "key": "干饭",
    "name": "🍚┃干饭┃APP",
    "type": 3,
-   "api": "csp_AppGet",
-   "ext": "https://www.douy32mf.top|1234567887654321"
+   "api": "csp_AppDrama2",
+   "ext": {
+    "appName": "小苹果",
+    "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCduNEnfxGaLuQRk5ABzXHhPV43zi00sCHjLo8BYc+Wi6xXm2b4v0i28Sq4WlNCKhseft9fz8kO/qLr6/022o1RcuOU7e4GFL3U9WnNODwRBYSYWd+K8nqpI/tAUDmZEBGRWqjrc7x6aMl3A+xpnWkLbPCLsuhbuuUE3tv09oeOpwIDAQAB",
+    "dataKey": "S0VNDTJHOFHHCNMRAW5IV2TOS2PBPQ==",
+    "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+    "pkg": "com.juechufsh.android.xpg1",
+    "host": "",
+    "site": "https://xpgandroid03-1372779881.cos.ap-beijing.myqcloud.com/app_xpg_android.txt",
+    "version": "1.0.0.3",
+    "decrypt": "0"
+   }
   },
   {
    "key": "光盘",
@@ -118,17 +83,16 @@
    "key": "行动",
    "name": "😌┃行动┃APP",
    "type": 3,
-   "api": "csp_AppDrama",
+   "api": "csp_AppDrama2",
    "ext": {
-    "host": "",
-    "site": "https://dyttandroid04-1372779881.cos.ap-shanghai.myqcloud.com/app_dyttandroid.txt",
-    "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCduNEnfxGaLuQRk5ABzXHhPV43zi00sCHjLo8BYc+Wi6xXm2b4v0i28Sq4WlNCKhseft9fz8kO/qLr6/022o1RcuOU7e4GFL3U9WnNODwRBYSYWd+K8nqpI/tAUDmZEBGRWqjrc7x6aMl3A+xpnWkLbPCLsuhbuuUE3tv09oeOpwIDAQAB",
-    "dataKey": "D2KREWRIBVNAUJJYEDL4VFHOY2Q0PQ==",
+    "appName": "华谊",
+    "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCp9Ek4wIlQAtwFnuBRlsFiow2tr+4UOciGeNKbY7nL74etUqUb6fvpOSOHhFEfaWlfwUpOB17x3JEL3No19nfjCeVYrYPjlJcgoqUWH/tfIfFAQWvtxBIBlKazkhw8d3ChysWmeWRikKqkBsVRY4oqNPuj4sjm6Zult0U4I4prRQIDAQAB",
+    "dataKey": "NDBYSZR1DMRRZ05NSUCWEJNIYWLBPT0=",
     "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
-    "commonKey": "",
-    "version": "3.0.0.7",
-    "pkg": "com.dytiantang.one",
-    "appName": "电影天堂",
+    "pkg": "com.muyue.tool",
+    "host": "",
+    "site": "https://vip.123pan.cn/1851089669/oss/az5.txt",
+    "version": "1.0.0.4",
     "decrypt": "1"
    }
   },
@@ -136,22 +100,68 @@
    "key": "再来",
    "name": "✌️┃再来┃APP",
    "type": 3,
-   "api": "csp_AppGet",
-   "ext": "https://vv.229d.cn|8888888888888888"
+   "api": "csp_AppDrama2",
+   "ext": {
+    "appName": "电影天堂",
+    "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCduNEnfxGaLuQRk5ABzXHhPV43zi00sCHjLo8BYc+Wi6xXm2b4v0i28Sq4WlNCKhseft9fz8kO/qLr6/022o1RcuOU7e4GFL3U9WnNODwRBYSYWd+K8nqpI/tAUDmZEBGRWqjrc7x6aMl3A+xpnWkLbPCLsuhbuuUE3tv09oeOpwIDAQAB",
+    "dataKey": "D2KREWRIBVNAUJJYEDL4VFHOY2Q0PQ==",
+    "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+    "pkg": "com.dytiantang.one",
+    "host": "",
+    "site": "https://dyttandroid04-1372779881.cos.ap-shanghai.myqcloud.com/app_dyttandroid.txt",
+    "version": "3.0.0.7",
+    "decrypt": "0"
+   }
   },
   {
    "key": "一碗",
    "name": "🥣┃一碗┃APP",
    "type": 3,
-   "api": "csp_AppGet",
-   "ext": "https://app.95112475.xyz|5a9w6x58dsq6z3a6"
+   "api": "csp_AppDrama2",
+   "ext": {
+    "appName": "橘汁",
+    "publicKey": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr8SzZhjYy+rsya1K09t8d2K50pWFoBkgUqMpKOiW+3IEVKd4eTdvg9RSOjQ82kypL6R9BnsmrS1V8s4PVDwjQbUtYhTPPC9Hz16qY7rpD6m0d2vr09/UpWQ5uOy9PR0QTrsioveZ+DIe9jc3C+zBCu/kZSY/R8stwJoiitki3gwIDAQAB",
+    "dataKey": "OW1WBLFZCLJ0WTNJQMRSZ2DYSGNBPT0=",
+    "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
+    "pkg": "com.mxj.wylcjbxyx",
+    "host": "",
+    "site": "https://123-1349250429.cos.ap-shanghai.myqcloud.com/app.txt",
+    "version": "3.0.2.4",
+    "decrypt": "1"
+   }
   },
   {
    "key": "韩圈",
    "name": "⭕┃韩圈 ┃APP",
    "type": 3,
-   "api": "csp_Hxq",
-   "ext": " http://www.小不点.com/api/2026/fishhxq.php"
+   "api": "csp_Hxq"
+  },
+  {
+   "key": "一起",
+   "name": "👀┃一起┃APP",
+   "type": 3,
+   "api": "csp_AppYQK",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 0
+  },
+  {
+   "key": "番茄",
+   "name": "🍅┃番茄┃APP",
+   "type": 3,
+   "api": "csp_AppFQ",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 0
+  },
+  {
+   "key": "咕噜",
+   "name": "🕊┃︎咕噜┃APP",
+   "type": 3,
+   "api": "csp_Gulu",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1
   },
   {
    "key": "蔬菜",
@@ -413,7 +423,7 @@
   },
   {
    "key": "push_agent",
-   "name": "关注公众号：熊猫是只肥猫",
+   "name": "QQ频道：肥猫宝贝",
    "type": 3,
    "api": "csp_Push",
    "playerType": "1",
@@ -2901,6 +2911,21 @@
      "url": "http://127.0.0.1"
     }
    ]
+  },
+  {
+   "name": "Gather「果」",
+   "type": 3,
+   "url": "https://tv.tmxk.kdns.fr/yplrnuc7",
+   "epg": "https://material.1989.click/epg.xml.gz",
+   "ua": "okhttp/3.8.1",
+   "timeout": 10,
+   "playerType": 2
+  },
+  {
+   "name": "Kimentanm",
+   "type": 0,
+   "url": "https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+   "playerType": 2
   },
   {
    "name": "综合直播",
