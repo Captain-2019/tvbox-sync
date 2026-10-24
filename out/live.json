@@ -68,13 +68,6 @@
   "timeout": 10
  },
  {
-  "name": "自动更新",
-  "type": 0,
-  "url": "https://z.szyyds.cn/iptv",
-  "playerType": 2,
-  "timeout": 10
- },
- {
   "name": "音乐所",
   "type": 0,
   "url": "https://szyyds.cn/tv/live/yy.txt",
