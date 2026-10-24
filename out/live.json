@@ -68,6 +68,13 @@
   "timeout": 10
  },
  {
+  "name": "音乐所",
+  "type": 0,
+  "url": "https://szyyds.cn/tv/live/yy.txt",
+  "playerType": 2,
+  "timeout": 10
+ },
+ {
   "name": "一起看",
   "type": 3,
   "api": "csp_AweSomeGuard",
