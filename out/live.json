@@ -25,15 +25,6 @@
   ]
  },
  {
-  "name": "Gather「果」",
-  "type": 3,
-  "url": "https://tv.tmxk.kdns.fr/yplrnuc7",
-  "epg": "https://material.1989.click/epg.xml.gz",
-  "ua": "okhttp/3.8.1",
-  "timeout": 10,
-  "playerType": 2
- },
- {
   "name": "Kimentanm",
   "type": 0,
   "url": "https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
