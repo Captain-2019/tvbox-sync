@@ -24,6 +24,22 @@
    "playerType": 2
   },
   {
+   "key": "alllive",
+   "name": "🎮┃游戏┃直播",
+   "type": 3,
+   "api": "csp_Alllive",
+   "style": {
+    "type": "rect",
+    "ratio": 1.597
+   },
+   "timeout": 20,
+   "playerType": 2,
+   "searchable": 0,
+   "quickSearch": 0,
+   "changeable": 0,
+   "ext": "game"
+  },
+  {
    "key": "csp_FeiMaoUC",
    "name": "⚡┃闪电┃优汐",
    "type": 3,
@@ -200,7 +216,7 @@
    "searchable": 1,
    "quickSearch": 1,
    "filterable": 1,
-   "ext": "https://www.czzy89.com"
+   "ext": "https://www.4kcz.com/"
   },
   {
    "key": "csp_SP360",
@@ -1137,7 +1153,7 @@
    "changeable": 0
   },
   {
-   "key": "alllive",
+   "key": "laoliubei_alllive",
    "name": "📽️┃一直播┃LIVE",
    "type": 3,
    "api": "csp_Alllive",
@@ -6342,6 +6358,32 @@
    "timeout": 60
   },
   {
+   "key": "local",
+   "name": "Local",
+   "type": 3,
+   "api": "csp_Local",
+   "searchable": 0,
+   "changeable": 0
+  },
+  {
+   "key": "market",
+   "name": "Market",
+   "type": 3,
+   "api": "csp_Market",
+   "searchable": 0,
+   "changeable": 0,
+   "ext": "./market.json"
+  },
+  {
+   "key": "push_agent@fty_backup",
+   "name": "Push",
+   "type": 3,
+   "api": "csp_Push",
+   "searchable": 0,
+   "changeable": 0,
+   "timeout": 60
+  },
+  {
    "key": "豆瓣2@ysc_ouge",
    "name": "📢龙马精神、金戈铁马、骏马迎春、马行千里！",
    "type": 3,
@@ -6478,32 +6520,6 @@
    "type": 3,
    "api": "csp_Douban",
    "searchable": 0
-  },
-  {
-   "key": "local",
-   "name": "Local",
-   "type": 3,
-   "api": "csp_Local",
-   "searchable": 0,
-   "changeable": 0
-  },
-  {
-   "key": "market",
-   "name": "Market",
-   "type": 3,
-   "api": "csp_Market",
-   "searchable": 0,
-   "changeable": 0,
-   "ext": "./market.json"
-  },
-  {
-   "key": "push_agent@fty_backup",
-   "name": "Push",
-   "type": 3,
-   "api": "csp_Push",
-   "searchable": 0,
-   "changeable": 0,
-   "timeout": 60
   },
   {
    "key": "drpy_js_豆瓣@ysc_4k",
