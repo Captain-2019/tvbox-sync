@@ -25,19 +25,6 @@
   ]
  },
  {
-  "name": "Kimentanm",
-  "type": 0,
-  "url": "https://ghfast.top/https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
-  "playerType": 2
- },
- {
-  "name": "综合直播",
-  "type": 0,
-  "playerType": 2,
-  "url": "https://ghfast.top/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/interface.txt",
-  "ua": "bingcha/1.1 (mianfeifenxiang) "
- },
- {
   "name": "咪咕",
   "type": 0,
   "url": "https://develop202.github.io/migu_video/interface.txt",
