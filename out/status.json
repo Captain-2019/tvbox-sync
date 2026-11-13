@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13 03:28:13",
+ "updated_at": "2026-11-13 13:14:35",
  "totals": {
   "sources": 5,
   "alive_sources": 5,
@@ -9,9 +9,9 @@
  "used_sources": [
   "影视仓·单仓聚合(167站)",
   "高天流云(33站)",
-  "影视仓·欧歌线路",
   "饭太硬备用(spider)",
-  "影视仓·4K专线(53站)"
+  "影视仓·4K专线(53站)",
+  "影视仓·欧歌线路"
  ],
  "sources": [
   {
@@ -23,16 +23,16 @@
     "https://gh-proxy.net/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json"
    ],
    "ok": true,
-   "ms": 58,
+   "ms": 547,
    "sites": 517,
    "lives": 21,
    "parses": 85,
    "alive": 3,
    "probed": 3,
-   "score": 99.61,
+   "score": 96.35,
    "used_url": "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/%E5%8D%95%E4%BB%93%E8%81%9A%E5%90%88.json",
    "err": "",
-   "ts": 1794540423
+   "ts": 1794575525
   },
   {
    "id": "gaotian",
@@ -42,35 +42,16 @@
     "https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json"
    ],
    "ok": true,
-   "ms": 47,
+   "ms": 180,
    "sites": 33,
    "lives": 0,
    "parses": 0,
    "alive": 3,
    "probed": 3,
-   "score": 90.69,
-   "used_url": "https://cdn.jsdelivr.net/gh/gaotianliuyun/gao@master/0827.json",
+   "score": 89.8,
+   "used_url": "https://gh-proxy.com/https://raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json",
    "err": "",
-   "ts": 1794540423
-  },
-  {
-   "id": "ysc_ouge",
-   "name": "影视仓·欧歌线路",
-   "urls": [
-    "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/ouge.json",
-    "https://gh-proxy.com/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/ouge.json"
-   ],
-   "ok": true,
-   "ms": 446,
-   "sites": 12,
-   "lives": 2,
-   "parses": 11,
-   "alive": 3,
-   "probed": 3,
-   "score": 81.03,
-   "used_url": "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/ouge.json",
-   "err": "",
-   "ts": 1794540423
+   "ts": 1794575525
   },
   {
    "id": "fty_backup",
@@ -80,16 +61,16 @@
     "https://gh-proxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json"
    ],
    "ok": true,
-   "ms": 230,
+   "ms": 558,
    "sites": 3,
    "lives": 1,
    "parses": 0,
    "alive": 3,
    "probed": 3,
-   "score": 79.47,
+   "score": 77.28,
    "used_url": "https://cdn.jsdelivr.net/gh/FongMi/CatVodSpider@main/json/config.json",
    "err": "",
-   "ts": 1794540423
+   "ts": 1794575525
   },
   {
    "id": "ysc_4k",
@@ -99,17 +80,36 @@
     "https://gh-proxy.com/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/4k.json"
    ],
    "ok": true,
-   "ms": 49,
+   "ms": 559,
    "sites": 53,
    "lives": 2,
    "parses": 17,
    "alive": 2,
    "probed": 3,
-   "score": 77.34,
+   "score": 73.94,
    "used_url": "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/4k.json",
    "err": "",
-   "ts": 1794540423
+   "ts": 1794575525
+  },
+  {
+   "id": "ysc_ouge",
+   "name": "影视仓·欧歌线路",
+   "urls": [
+    "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/ouge.json",
+    "https://gh-proxy.com/https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/ouge.json"
+   ],
+   "ok": true,
+   "ms": 1774,
+   "sites": 12,
+   "lives": 2,
+   "parses": 11,
+   "alive": 3,
+   "probed": 3,
+   "score": 72.17,
+   "used_url": "https://cdn.jsdelivr.net/gh/Lightconer/tvbox-ysc-config@main/output/ouge.json",
+   "err": "",
+   "ts": 1794575525
   }
  ],
- "local_url": "http://10.1.0.198:8848/tvbox.json"
+ "local_url": "http://10.1.0.186:8848/tvbox.json"
 }
